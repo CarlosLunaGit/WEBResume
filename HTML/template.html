@@ -1,35 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../CSS Grid Layout/template_config.css">
+    <link rel="stylesheet" type="text/css" href="../CSS Grid Layout/timeline.css">
     <title></title>
+    <script src="../Javascript/vanish_item.js"></script>
   </head>
   <body>
-    <div class="grid-master">
-      <div class="grid-sumary">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a> -->
+      <!-- <div class="grid-master-side" id="maingrid_sidemenu"> -->
+        <div class="grid-master-side" id="profilesumary">
 
-        <div>sumary-data-photo</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
-        <div>grid-sumary-data</div>
+          <div><a><img src="../IMG_20190923_114113.png" alt="Carlos Jesus Luna Lizarde" class="responsive"></a></div>
+          <div></div>
+          <div><a class='data'><h1>Carlos Luna</h1></a></div>
+          <div><a class='data'><h4>Automotive Systems Engineer</h4></a></div>
+          <div><a class='data'>Control and Automation Specialist into Security & Comfort</a></div>
+          <div></div>
+          <div><a class='data'>Mobile: +1 336 938 4098 </a></div>
+          <div><a class='data'>email: cluna_lizarde@outlook.com</a></div>
+          <div><a class='data'>LinkedIn: www.linkedin.com/in/carlos-luna-25aba4107</a></div>
+          <div><a class='data'>Current Job: System Verification Engineer</a></div>
+          <div><a class='data'>Type: IT Consultant</a></div>
+          <div></div>
+        </div>
+      <!-- </div> -->
+    </div>
 
+    <div class="grid-master" id="maingrid">
+      <div class="grid-Navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom: 0;">
+          <a class="navbar-brand" href="#">e-Resume</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="text-align: -webkit-center;">
+              <li class="nav-item active" style="vertical-align: text-bottom;">
+                <a onclick="openNav()" class="nav-link" href="#">Quick Data <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" style="vertical-align: text-bottom;">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item dropdown" style="vertical-align: text-bottom;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Professional Experience
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Employment History</a>
+                  <a class="dropdown-item" href="#">Areas of Expertise</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Languages</a>
+                </div>
+              </li>
+              <li class="nav-item" style="vertical-align: text-bottom;">
+                <a class="nav-link" href="#">Tranning & Certificates</a>
+              </li>
+              <li class="nav-item" style="vertical-align: text-bottom;">
+                <a class="nav-link" href="#">Patents</a>
+              </li>
+              <li class="nav-item" style="vertical-align: text-bottom;">
+                <a class="nav-link navbar-text" href="#">Proyects & Social Work</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+        <nav id ='Search-Box' style='justify-content: space-evenly; padding-top: 0px;' class="navbar navbar-expand-lg navbar-light bg-light">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="padding: 0rem 0rem;">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </nav>
       </div>
 
       <div class="grid-content">
-        <div class="item-a">grid-content-data</div>
-        <div class="item-b">grid-content-data</div>
+        <div class="item-a">
+        </div>
+        <div class="item-b">
+          <div class="timelineTL">
+            <div class="containerTL leftTL">
+              <div class="contentTL">
+                <h2>Jul 2019 - Present</h2>
+                <h5>XDIN Inc | USA, NC Greensboro</h5>
+                <p>System Verification Engineer | In-site consultant at Volvo Trucks NA</p>
+                <p>Scripting development for verification of Diagnostic SW capabilities
+                  (DTC reading/writing, Fault tracing, Testing operations, Programming operations,
+                  Diagnostics operations, programing operations, repair instructions) in accordance with Client
+                  (Volvo Trucks NA) internal requirements.
+                    Data Analytics work on Faulty part and warranty claims.
+                    Maintenance owner for the Technicians Schematics viewer website, on charge of Full-stack changes and QA content reviews.
+                    Diagnostics/Requirements support in the project development of a Multi-brand cluster for MY 21/22/23
+                    Leading a group of 5 junior engineers and consolidating the internal Automation Team for supporting local innovation activities.
+                    Use of software tools such as Vector Hardware, VOCOM II, UFT, CANoe to create/run test suites. </p>
+
+              </div>
+            </div>
+            <div class="containerTL rightTL">
+              <div class="contentTL">
+                <h2>Aug 2018 - Jul 2019</h2>
+                <h5>Visteon Corporation | México, Queretaro</h5>
+                <p>System Validation Engineer</p>
+                <p>Scripting development for validation of cluster functionalities (Forward collision alert, La ne keep assist, Diagnostics validation UDS ISO 14229-1, CAN, LIN, Bootloader/VP/GP flashing, HIL, etc.) in accordance with Client and Visteon internal requirements.
+                  Computer Vision recognition implementation for automatized validation using NI equipment.
+                  Taking OEM (client) requirements to define a measurement framework to evaluate how much of the requirements are met.
+                  Responsible for testing two different DUT (Device Under Test) the Driver Information Cluster (all digital) and the HUD (Head Up Display).
+                  Involved with features that belong to the cluster for GM projects MY 20/21/22.  More important scripting executions completed are: Lane keep assist, Forward collision alert, Gap/Following distance, Driver information Pages, Diagnostic validation accordingly the ISO 14229 for UDS Message communication protocol.
+                  Using software tools such as Vector Hardware, NeoVI, Provetech, CANoe, Vflash, AUTOSAR Viewer, Vision Builder, Vision Acquisition to create test case creation procedures.
+                  Working with Computer Vision to handle inspections based in color intensity, patterns recognitions, gauges, bar graphs and text recognition to create automatic scripts.
+                  Simulating and monitoring outputs for closed HIL (hardware in the loop) development.
+                  Partnering with Sofia software development team at Bulgaria to detect and indicate any defects with test procedures by sharing scripting and results as well as the software version of what the signals/calibrations were used.
+                  </p>
+
+              </div>
+            </div>
+            <div class="containerTL leftTL">
+              <div class="contentTL">
+                <h2>March 2017 - Aug 2018</h2>
+                <h5>TREC General Motors | México, Toluca</h5>
+                <p>Design Release Engineer</p>
+                <p>Design Release, Supplier agreements, Plant events coordinator, Material coordinator, Math data maintenance & Designer, travels to the Detroit area to supervise vehicle builds events. DFSS Green Belt.
+                  Lead a team to work on several programs from PATAC in China to NA in the Detroit area and identify any quality issues found in preproduction vehicles or current production.
+                  Responsible for integrating a team to resolve root causes and solutions by creating change requests for products on current production lines.
+                  </p>
+
+              </div>
+            </div>
+            <div class="containerTL rightTL">
+              <div class="contentTL">
+                <h2>Jan 2016 - March 2017</h2>
+                <h5>TREC General Motors | México, Toluca</h5>
+                <p>Design Engineer</p>
+                <p>Designing CAC ducts and TOC lines proposals, Design review with suppliers, DFMEA Block diagram owner, Attendant of innovation initiatives, and critical role for DFSS project.
+                    Research and development of new heating alternatives for Benches in PTC laboratory.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="item-c">grid-content-data</div>
         <div class="item-d">grid-content-data</div>
-
-
-
       </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
