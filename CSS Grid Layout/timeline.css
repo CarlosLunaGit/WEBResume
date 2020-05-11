@@ -20,7 +20,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: gray;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -42,7 +42,7 @@
   width: 25px;
   height: 25px;
   right: -12px;
-  background-color: white;
+  background-color: gray;
   border: 4px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
@@ -70,7 +70,7 @@
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent gray;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -84,7 +84,7 @@
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent gray transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -95,7 +95,7 @@
 /* The actual content */
 .contentTL {
   padding: 20px 30px;
-  background-color: white;
+  background-color: gray;
   position: relative;
   border-radius: 6px;
 }
