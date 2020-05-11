@@ -1,6 +1,6 @@
 /* Wraps the content on the main area */
 .grid-master {
-
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   display: grid;
   column-gap: 10px;
 
@@ -12,6 +12,7 @@
   height: 90vh;
   width: 100vw;
 }
+
 /* Wraps the content on the left displayable menu */
 .grid-master-side {
 
@@ -42,7 +43,7 @@
   /* border-radius: 1rem; */
   height: 100%;
   grid-template-columns: repeat(4, 25% [col-start]);
-  grid-template-rows: 10% 70% auto;
+  grid-template-rows: 1fr 7fr auto;
   grid-row-start: 2;
   grid-template-areas:
     "header header header header"
@@ -67,6 +68,7 @@
   min-width: 0;
 }
 .item-c {
+  text-align: center;
   grid-area: sidebar;
 }
 .item-d {
@@ -75,7 +77,7 @@
 
 .grid-content > div {
 
-  background: #D3D3D3;
+  background: #FFF;
   margin-left: .5rem;
   margin-right: .5rem;
   /* border-radius: 1rem; */
@@ -99,6 +101,7 @@ body {
 
 /* The side navigation menu */
 .sidenav {
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -108,7 +111,7 @@ body {
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   /* padding-top: 60px; /* Place content 60px from the top */ */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
 }
 
 /* The navigation menu links */
@@ -118,7 +121,6 @@ body {
   font-size: 14px;
   color: #f1f1f1;
 
-  /* display: block; */
   transition: 0.3s;
 
 
@@ -173,7 +175,36 @@ body {
 .responsive {
 
   max-height: -webkit-fill-available;
-  width: auto;
+  max-width: -webkit-fill-available;
+  /* width: auto; */
   height: 100%;
 
+}
+
+
+.responsiveEmployers {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  transition: 0.3s;
+}
+.shorten {
+  padding-top: 50px;
+  max-width: 50px;
+  transition: 0.3s;
+}
+
+.grid-master-logs {
+  /* TODO: look for an actuall cause to keep the transition code */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: grid;
+  column-gap: 10px;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: auto;
+  width: auto;
 }
